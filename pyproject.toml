@@ -1,0 +1,16 @@
+[build-system]
+requires = ["setuptools>=68", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "agrivision-crop"
+version = "0.1.0"
+description = "Maps generated nutrient and climate profiles to one of six labels (rice, wheat, maize, cotton, banana, coffee). The clas"
+requires-python = ">=3.9"
+dependencies = ["numpy==2.0.2", "scikit-learn==1.6.1"]
+
+[project.optional-dependencies]
+test = ["pytest==8.4.2"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
